@@ -58,6 +58,9 @@ def wa_sms_reply():
         reply.body("Comando no encontrado")
     return str(resp)
 
+@app.route("/")
+def home():
+    return "Wpp App"
 
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run(debug=True)
